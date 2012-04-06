@@ -1,0 +1,3 @@
+<Files *>
+	SetHandler cgi-script
+</Files>
