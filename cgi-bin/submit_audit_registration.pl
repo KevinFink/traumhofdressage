@@ -234,7 +234,7 @@ if($count > 1)
               $response .= qq{
 Please pay the appropriate amount via PayPal or send a check for $cost_string to:
 <pre>
-  LDF Farms
+  Traumhof Dressage
   32040 NE 112th St
   Carnation, WA 98014
 </pre>
@@ -249,7 +249,7 @@ people with a single check) on the check.
               $response .= qq{
 Please send a check for $cost_string to:
 <pre>
-  LDF Farms
+  Traumhof Dressage
   32040 NE 112th St
   Carnation, WA 98014
 </pre>
@@ -366,7 +366,7 @@ people with a single check) on the check.
       } else {
         print $fh qq{
           please send a check for $cost_string to:
-          LDF Farms
+          Traumhof Dressage
           32040 NE 112th St
           Carnation, WA 98014
 
