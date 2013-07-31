@@ -8,7 +8,7 @@ my $template = '/home/traumhof/traumhofdressage/clinic_registration.html';
 my $logfile = '/home/traumhof/traumhofdressage/registrations.txt';
 my @bcc = qw(jessica@fink.com kevin@fink.com);
 my $lunch_fee = 15;
-my $default = 'lientje_jul2013';
+my $default = 'debbie_sep2013';
 
 my $today = `date +%Y%m%d`;
 my $response;
