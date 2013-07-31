@@ -465,19 +465,19 @@ if($error != 0)
         </td>
       </tr>
       <tr class="oddline">
-        <td>VIP:</td>
+        <td>Type:</td>
         <td>
-          <label><input type="radio" checked="checked" value="N/A" name="vip">N/A</label><br>
+          <label><input type="radio" checked="checked" value="N/A" name="vip">Auditor</label><br>
           <label><input type="radio" value="Boarder" name="vip">Traumhof Boarder</label><br>
           <label><input type="radio" value="Rider" name="vip">Rider</label><br>
-          <label><input type="radio" value="Groom" name="vip">Groom for <input type="text" name="groomfor"/></label><br>
+          <label><input type="radio" value="Groom" name="vip">Groom for Rider: <input type="text" name="groomfor"/></label><br>
         </td>
       </tr>
       };
   if($party) {
     $response .= qq{
       <tr>
-        <td>Attending Saturday<br>evening party?</td>
+        <td>Attending Friday<br>evening party?</td>
         <td>}.
           radio_group(-name=>'party',
             -values=>['Yes','No'],
