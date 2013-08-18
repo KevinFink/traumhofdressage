@@ -39,7 +39,7 @@ my $data = {
     sat_long => 'Saturday, September 28th, 2013',
     sun_long => 'Sunday, September 29th, 2013',
     both_long => 'Saturday and Sunday, September 28th and 29th, 2013',
-    party => 1,
+    party => 0,
     late => 0,
     lunch_offered => 0,
   },
@@ -52,6 +52,7 @@ my $data = {
     sat_long => 'Friday, September 13th, 2013',
     sun_long => 'Saturday, September 14th, 2013',
     both_long => 'Friday and Saturday, September 13th and 14th, 2013',
+    date_values => ['fri','sat','both'],
     party => 1,
     late => 0,
     lunch_offered => 0,
@@ -126,6 +127,7 @@ my $clinic_name = $custom->{'clinic_name'};
 my $late = $custom->{'late'} || 0;
 my $lunch_offered = $custom->{'lunch_offered'} || 0;
 my $party = $custom->{'party'} || 0;
+my $radio_values = $custom->{'date_values'} || ['sat','sun','both'];
 
 if($count > 1)
 {
@@ -168,7 +170,7 @@ if($count > 1)
   }
 
   my %selected;
-  if($cgi->param('date') eq 'sat' || $cgi->param('date') eq 'sun')
+  if($cgi->param('date') eq 'fri' || $cgi->param('date') eq 'sat' || $cgi->param('date') eq 'sun')
   {
     $cost += $audit_fee;
     $selected{'one'} = 'selected';
@@ -459,9 +461,9 @@ if($error != 0)
         <td>Attending:</td>
         <td>}.
           radio_group(-name=>'date',
-            -values=>['sat','sun','both'],
+            -values=>$radio_values,
             -default=>'both',
-            -labels=>{'sat'=>'Sat','sun'=>'Sun','both'=>'Both'}).qq{
+            -labels=>{'fri' =>'Fri','sat'=>'Sat','sun'=>'Sun','both'=>'Both'}).qq{
         </td>
       </tr>
       <tr class="oddline">
