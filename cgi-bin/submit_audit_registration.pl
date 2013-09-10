@@ -30,19 +30,6 @@ my $data = {
     late => 0,
     lunch_offered => 0,
   },
-  lientje_sep2013 => {
-    audit_fee => 35,
-    audit_fee2 => 60,
-    ei_audit_fee => undef,
-    clinic_name => 'Lientje Schueler',
-    date => 20130929,
-    sat_long => 'Saturday, September 28th, 2013',
-    sun_long => 'Sunday, September 29th, 2013',
-    both_long => 'Saturday and Sunday, September 28th and 29th, 2013',
-    party => 0,
-    late => 0,
-    lunch_offered => 0,
-  },
   debbie_sep2013 => {
     audit_fee => 35,
     audit_fee2 => 60,
@@ -54,7 +41,7 @@ my $data = {
     both_long => 'Friday and Saturday, September 13th and 14th, 2013',
     date_values => ['fri','sat','both'],
     party => 1,
-    late => 0,
+    late => 1,
     lunch_offered => 0,
   },
   lientje_oct2013 => {
