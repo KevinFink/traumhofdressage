@@ -8,7 +8,7 @@ my $template = '/home/traumhof/traumhofdressage/clinic_registration.html';
 my $logfile = '/home/traumhof/traumhofdressage/registrations.txt';
 my @bcc = qw(jessica@fink.com kevin@fink.com);
 my $lunch_fee = 15;
-my $default = 'debbie_sep2013';
+my $default = 'lientje_jan2014';
 
 my $today = `date +%Y%m%d`;
 my $response;
@@ -17,19 +17,6 @@ my $cost = 0;
 my $enable_paypal = 1;
 
 my $data = {
-  lientje_jul2013 => {
-    audit_fee => 35,
-    audit_fee2 => 60,
-    ei_audit_fee => undef,
-    clinic_name => 'Lientje Schueler',
-    date => 20130728,
-    sat_long => 'Saturday, July 27th, 2013',
-    sun_long => 'Sunday, July 28th, 2013',
-    both_long => 'Saturday and Sunday, July 27th and 28th, 2013',
-    party => 1,
-    late => 0,
-    lunch_offered => 0,
-  },
   debbie_sep2013 => {
     audit_fee => 35,
     audit_fee2 => 60,
@@ -44,15 +31,15 @@ my $data = {
     late => 1,
     lunch_offered => 0,
   },
-  lientje_oct2013 => {
+  lientje_jan2014 => {
     audit_fee => 35,
     audit_fee2 => 60,
     ei_audit_fee => undef,
     clinic_name => 'Lientje Schueler',
-    date => 20131027,
-    sat_long => 'Saturday, October 26th, 2013',
-    sun_long => 'Sunday, October 27th, 2013',
-    both_long => 'Saturday and Sunday, October 26th and 27th, 2013',
+    date => 20140118,
+    sat_long => 'Saturday, January 18th, 2014',
+    sun_long => 'Sunday, January 19th, 2014',
+    both_long => 'Saturday and Sunday, January 18th and 19th, 2014',
     party => 1,
     late => 0,
     lunch_offered => 0,
