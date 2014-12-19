@@ -8,7 +8,7 @@ my $template = '/home/traumhof/traumhofdressage/clinic_registration.html';
 my $logfile = '/home/traumhof/traumhofdressage/registrations.txt';
 my @bcc = qw(jessica@fink.com kevin@fink.com);
 my $lunch_fee = 15;
-my $default = 'lientje_nov2014';
+my $default = 'lientje_jan2015';
 
 my $today = `date +%Y%m%d`;
 my $response;
@@ -40,6 +40,19 @@ my $data = {
     sat_long => 'Saturday, November 22nd, 2014',
     sun_long => 'Sunday, November 23rd, 2014',
     both_long => 'Saturday and Sunday, November 22nd and 23rd, 2014',
+    party => 0,
+    late => 0,
+    lunch_offered => 0,
+  },
+  lientje_jan2015 => {
+    audit_fee => 35,
+    audit_fee2 => 60,
+    ei_audit_fee => undef,
+    clinic_name => 'Lientje Schueler',
+    date => 20150130,
+    sat_long => 'Saturday, January 30th, 2015',
+    sun_long => 'Sunday, January 31st, 2015',
+    both_long => 'Saturday and Sunday, January 30th and 31st, 2015',
     party => 0,
     late => 0,
     lunch_offered => 0,
@@ -400,7 +413,8 @@ if($error != 0)
     <div style="clear: both; background:#999999; width: 800px;">
     <p style="font-size:1.2em">Thank you for your interest in the $clinic_name clinic on $custom->{'both_long'}!
       Auditing is \$$custom->{'audit_fee'} per day
-      (or \$$custom->{'audit_fee2'} for the weekend).</p>
+      (or \$$custom->{'audit_fee2'} for the weekend). As always, Traumhof Boarders are
+      welcome to attend for free!</p>
   };
   if($lunch_offered) {
     $response .= qq{
