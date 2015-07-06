@@ -379,6 +379,7 @@ body
 	overflow: hidden;
 	word-wrap: break-word;
 	background: #000000;
+  color:#ffffff;
 	text-align: left;
 	width: 95%;
 }
