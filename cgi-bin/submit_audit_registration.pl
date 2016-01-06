@@ -8,7 +8,7 @@ my $template = '/home/traumhof/traumhofdressage/clinic_registration.html';
 my $logfile = '/home/traumhof/traumhofdressage/registrations.txt';
 my @bcc = qw(jessica@fink.com kevin@fink.com);
 my $lunch_fee = 15;
-my $default = 'lientje_may2015';
+my $default = 'lientje_jan2016';
 
 my $today = `date +%Y%m%d`;
 my $response;
@@ -31,15 +31,15 @@ my $data = {
     late => 1,
     lunch_offered => 0,
   },
-  lientje_may2015 => {
+  lientje_jan2016 => {
     audit_fee => 35,
     audit_fee2 => 60,
     ei_audit_fee => undef,
     clinic_name => 'Lientje Schueler',
-    date => 20150130,
-    sat_long => 'Saturday, May 16th, 2015',
-    sun_long => 'Sunday, May 17th, 2015',
-    both_long => 'Saturday and Sunday, May 16th and 17th, 2015',
+    date => 20160123,
+    sat_long => 'Saturday, January 23rd, 2016',
+    sun_long => 'Sunday, January 24th, 2016',
+    both_long => 'Saturday and Sunday, January 23rd and 24th, 2016',
     party => 0,
     late => 0,
     lunch_offered => 0,
